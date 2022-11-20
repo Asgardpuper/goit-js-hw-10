@@ -4,7 +4,7 @@ export default class CountriesApi {
   }
   fetchCountriesByName(name) {
     return fetch(
-      `${this.url}${name}?fields=name,capital,flags,population`
+      `${this.url}${name}?fields=name,capital,flags,population,languages`
     ).then(data => data.json());
   }
 }
